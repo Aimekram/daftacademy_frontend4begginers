@@ -7,7 +7,7 @@
 </head>
 
 <body>
-    <div id="menu">
+    <div class="sidebar">
         <img src="images/logo.png">
         <nav>
             <ul>
@@ -30,6 +30,7 @@
 
 
     <section id="home">
+        <h1>Oficjalna strona zespołu 6BM</h1>
         <ul>
             <li>
                 <ul>
@@ -41,22 +42,22 @@
             <li>
                 <ul>
                     <li><img src="images/band-member02.png"></li>
-                    <li>Kamil Zgondek</li>
-                    <li>Keys</li>
+                    <li>Łukasz Furman</li>
+                    <li>Vocals</li>
                 </ul>
             </li>
             <li>
                 <ul>
                     <li><img src="images/band-member03.png"></li>
-                    <li>Kamil Zgondek</li>
-                    <li>Keys</li>
+                    <li>Kamil Majewski</li>
+                    <li>Drums</li>
                 </ul>
             </li>
             <li>
                 <ul>
                     <li><img src="images/band-member04.png"></li>
-                    <li>Kamil Zgondek</li>
-                    <li>Keys</li>
+                    <li>Daniel Cajzer</li>
+                    <li>Bass guitar</li>
                 </ul>
             </li>
 
@@ -69,9 +70,8 @@
         
         <div>
             <h3>Straight from Lublin</h3>
-            <p>lorem</p>
-            <p>ipsum</p>
-        
+            <p>6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock. Band members aim to convey emotions, reflexion but also hope.</p>
+            <p>They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass. As for now they released their debut EP - TRINITY and they started working on their first full length album.</p>        
         </div>
     </section>
     
@@ -107,7 +107,7 @@
         
     <section id="video">
         <h2>Video</h2>
-        link do video z yt
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l5Ibm8mjSek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
     
     <section id="photos">
@@ -133,9 +133,19 @@
     </section>
     
     
-    <label>Email<input placeholder="your email"></label>
-    <label>Topic<input placeholder="topic of your message"></label>
-    <button id="contactBtn">Contact us</button>
+    <form class="contact-form">
+        <div>
+            <label>Email</label>
+            <input type="email" id="email" placeholder="your email">
+        </div>
+        <div>
+            <label>Topic</label>
+            <input type="text" id="topic" placeholder="topic of your message">
+        </div>
+
+        <button type="submit" id="contactBtn">Contact us!</button>
+    </form>
+
 
     
 </body>
