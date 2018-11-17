@@ -1,3 +1,169 @@
 body {
-    background-color: aquamarine;
+    background-color: aliceblue;
+    padding: 0;
+    margin: 0;
+    font-family: "Open Snas", monospace, sans-serif;
+}
+
+ul { 
+    list-style: none; 
+}
+
+h1 {
+    margin-left: 40px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border-radius: 5px;
+    border: 0px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+
+.non-visible {
+   color: rgba(0, 0, 0, 0); 
+}
+
+.page-header {
+    position: fixed;
+    text-align: left;
+}
+
+.navigation {
+    line-height: 1.6;
+    letter-spacing: 6.7px;
+}
+
+.page-footer {
+    position: fixed;
+    margin-top: 65vh;
+}
+
+.social-links__item img {
+    width: 35px;
+    height: auto;
+}
+
+.content-section {
+    border-bottom: 4px solid red;
+    min-height: 100vh;
+    padding-right: 50px;
+}
+
+.content-section__header {
+    text-transform: uppercase;
+    text-align: right;
+    padding-top: 50px;
+}
+
+/*--------------------------------HOME*/
+
+.band-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20vh;
+}
+
+.band-members__name {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*--------------------------------ABOUT*/
+
+.about-section__photo {
+    float: right;
+    width: 50vw;
+}
+
+.about-section__desc {
+    float: left;
+    width: 300px;
+    margin-top: 150px;
+    margin-left: 200px;
+}
+
+/*--------------------------------CONCERTS*/
+
+.concerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 80vw;
+}
+
+.concerts__item {
+    flex-basis: 35%;
+}
+
+.concerts img {
+    width: 25vw;
+    height: auto;
+    border-bottom: 3px solid #ec008c;
+}
+
+/*
+.concerts button {
+    float: right;
+    margin-right: 20px;
+}
+*/
+
+/*--------------------------------VIDEO*/
+
+iframe {
+    float: right;
+    margin-top: 30px;
+    width: 70vw;
+    height: 70vh;
+    border-top: 3px solid #ec008c;
+}
+
+/*--------------------------------PHOTOS*/
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    max-width: 90vw;
+    margin-left: 300px
+}
+
+.gallery__image {
+    width: 20vw; 
+    height: auto;
+    margin: 5px;
+    border-top: 3px solid #ec008c;
+}
+
+/*--------------------------------CONTACT*/
+
+.contact-section {
+    margin-left: 300px;
+}
+
+.contact-section__image {
+    width: 40vw;
+}
+
+address {
+    float: right;
+    margin-right: 10vw;
+    margin-top: 200px;
+    font-style: normal;
+}
+
+.form__field {
+    margin: 10px 0;
+}
+
+.form__input {
+    border: 0px;
+    border-radius: 5px;
+    padding: 5px 15px;
 }

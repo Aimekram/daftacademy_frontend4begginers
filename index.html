@@ -63,8 +63,8 @@
     
     <main class="page-content">
         <section id="home" class="content-section">
-            <h2 class="content-section__header">Home</h2>
-            <ul class="band-memebers">
+            <h2 class="content-section__header non-visible">Home</h2>
+            <ul class="band-members">
                 <li class="band-members__item">
                     <img class="band-members__photo" src="./images/band-member01.png" alt="Picture of the keayboard player's face">
                     <p class="band-members__name">Kamil Zgondek</p>
@@ -139,11 +139,11 @@
         
         <section id="video"  class="content-section">
             <h2 class="content-section__header">Video</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/l5Ibm8mjSek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/l5Ibm8mjSek" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     
         <section id="photos" class="content-section">
-            <h2>Photos</h2>
+            <h2 class="content-section__header">Photos</h2>
             <ul class="gallery">
                 <li class="gallery__item">
                     <img class="gallery__image" src="./images/band05_JakubBodys.jpg" alt="Photo of the vocalist during a gig" />
@@ -175,9 +175,9 @@
             </ul>
         </section>
     
-        <section id="contact" class="content-section">
+        <section id="contact" class="content-section contact-section">
             <h2 class="content-section__header">Contact</h2>
-            <img class="gallery__image" src="images/band12.jpg" alt="Photo of the band">
+            <img class="contact-section__image" src="images/band12.jpg" alt="Photo of the band">
             <address>
                 tel: 00 48 999 22 11<br/>
                 e-mail:6bmband@mail.mail
@@ -185,11 +185,11 @@
 
             <form class="form">
                 <div class="form__field">
-                    <label class="form__label" for="email">E-mail</label>
+                    <label class="form__label" for="email">E-mail</label><br/>
                     <input class="form__input" type="email" name="email" id="email" required />
                 </div>
                 <div class="form__field">
-                    <label class="form__label" for="topic">Topic</label>
+                    <label class="form__label" for="topic">Topic</label><br/>
                     <input class="form__input" type="text" name="topic" id="topic" required />
                 </div>
                 <div class="form__field">
