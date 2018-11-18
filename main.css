@@ -1,8 +1,9 @@
 body {
-    background-color: aliceblue;
+    background-color: #25072e;
     padding: 0;
     margin: 0;
     font-family: "Open Snas", monospace, sans-serif;
+    color: #dbd8fb;
 }
 
 ul { 
@@ -40,7 +41,7 @@ button {
 
 .page-footer {
     position: fixed;
-    margin-top: 65vh;
+    bottom: 30px;
 }
 
 .social-links__item img {
@@ -49,15 +50,18 @@ button {
 }
 
 .content-section {
-    border-bottom: 4px solid red;
     min-height: 100vh;
     padding-right: 50px;
+    max-width: 100%;
 }
 
 .content-section__header {
     text-transform: uppercase;
     text-align: right;
     padding-top: 50px;
+    color: #ec008c;
+    letter-spacing: 4.5px;
+    font-size: 28px;
 }
 
 /*--------------------------------HOME*/
@@ -95,6 +99,7 @@ button {
     flex-wrap: wrap;
     justify-content: flex-end;
     max-width: 80vw;
+    margin-left: 200px;
 }
 
 .concerts__item {
@@ -105,21 +110,29 @@ button {
     width: 25vw;
     height: auto;
     border-bottom: 3px solid #ec008c;
+    margin: 10px 0;
 }
 
-/*
+.concerts span {
+    float: left;
+    margin: 5px 0;
+}
+
+.concerts p {
+    margin: 4px 0;
+}
+
 .concerts button {
     float: right;
-    margin-right: 20px;
+    margin: 9px 45px 9px;
 }
-*/
 
 /*--------------------------------VIDEO*/
 
 iframe {
     float: right;
     margin-top: 30px;
-    width: 70vw;
+    width: 60vw;
     height: 70vh;
     border-top: 3px solid #ec008c;
 }
