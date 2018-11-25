@@ -1,131 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
-    background-color: #25072e;
     padding: 0;
     margin: 0;
-    font-family: "Open Snas", monospace, sans-serif;
+    background-image: url(images/background.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Open Sans", "Segoe UI", Tahoma, sans-serif;
+    font-size: 13px;
     color: #dbd8fb;
 }
 
-ul { 
-    list-style: none; 
+h1, h2, h3 {
+    margin: 0;
 }
 
-h1 {
-    margin-left: 40px;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
-button {
-    border-radius: 5px;
-    border: 0px;
-    text-transform: uppercase;
-    padding: 5px 15px;
-}
-
-.non-visible {
-   color: rgba(0, 0, 0, 0); 
-}
-
-.page-header {
-    position: fixed;
-    text-align: left;
-}
-
-.navigation {
-    line-height: 1.6;
-    letter-spacing: 6.7px;
-}
-
-.page-footer {
-    position: fixed;
-    bottom: 30px;
-}
-
-.social-links__item img {
-    width: 35px;
-    height: auto;
+.page-content {
+    margin-left: 220px;
+    padding: 0 5%;
+    text-align: right;
 }
 
 .content-section {
     min-height: 100vh;
-    padding-right: 50px;
-    max-width: 100%;
 }
 
 .content-section__header {
     text-transform: uppercase;
-    text-align: right;
-    padding-top: 50px;
     color: #ec008c;
     letter-spacing: 4.5px;
     font-size: 28px;
+    padding-top: 60px;
+    margin-bottom: 30px;
 }
+
+.non-visible {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ec008c;
+}
+
+button {
+    border-radius: 4px;
+    border: 0px;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    background-color: rgba(204, 200, 255, 0.1);
+    color: #dbd8fb;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+}
+
+
+/*--------------------------------PINK BORDERS - nie wiem czy ma to sens*/
+
+.border1 {
+    border-top: 3px solid #ec008c;
+}
+
+.border2 {
+    border-bottom: 3px solid #ec008c;
+}
+
+
+
+/*--------------------------------MENU*/
+
+.page-header {
+    position: fixed;
+    top: 50px;
+    left: 50px;
+}
+
+.navigation {
+    padding-top: 20px;
+    line-height: 2.1rem;
+    letter-spacing: 6.7px;
+    color: #ec008c;
+    font-weight: 600;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+}
+
+.social-links__item img {
+    width: 20px;
+    height: auto;
+    margin: 5px;
+}
+
+
 
 /*--------------------------------HOME*/
 
+.home-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+}
+
 .band-members {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-    margin-top: 20vh;
+    justify-content: space-around;
+}
+
+.band-members__photo {
+    height: 20vw;
 }
 
 .band-members__name {
     text-transform: uppercase;
-    font-weight: bold;
+    font-weight: 600;
+    letter-spacing: 3.8px;
+}
+
+.band-members__desc {
+    color: rgba(204, 200, 255, 0.5);
+    letter-spacing: 3.5px;
 }
 
 /*--------------------------------ABOUT*/
 
 .about-section__photo {
-    float: right;
     width: 50vw;
 }
 
 .about-section__desc {
-    float: left;
-    width: 300px;
-    margin-top: 150px;
-    margin-left: 200px;
+    position: relative;
+    width: 400px;
+    bottom: 260px;
+    left: 20px;
+    text-align: left;
+    background-color: #25072e;
+    padding: 30px 50px;
 }
+
+.about-section__desc-header{
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3.8px;
+    padding: 15px 0;
+}
+
+.about-section__desc-desc {
+    color: rgba(204, 200, 255, 0.8);
+    letter-spacing: 1.5px;
+}
+
 
 /*--------------------------------CONCERTS*/
 
 .concerts {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: flex-end;
-    max-width: 80vw;
-    margin-left: 200px;
+    align-items: space-between;
 }
 
 .concerts__item {
-    flex-basis: 35%;
+    margin: 20px;
+}
+
+.concerts__date {
+    font-weight: 600;
+    letter-spacing: 3.8px;
+}
+
+.concerts__location {
+    color: rgba(204, 200, 255, 0.5);
+    letter-spacing: 3.5px; 
+}
+
+.concerts__info {
+    text-align: left;
+    max-height: 3rem;
+    display: flex;
+    flex-flow: column wrap;
+/*    justify-content: center; - nie działa nie wiem dlaczego*/
+    align-content: space-between;
+    line-height: 4px;
+    
 }
 
 .concerts img {
     width: 25vw;
     height: auto;
     border-bottom: 3px solid #ec008c;
-    margin: 10px 0;
 }
 
-.concerts span {
-    float: left;
-    margin: 5px 0;
-}
-
-.concerts p {
-    margin: 4px 0;
-}
-
-.concerts button {
-    float: right;
-    margin: 9px 45px 9px;
-}
 
 /*--------------------------------VIDEO*/
 
@@ -134,7 +218,6 @@ iframe {
     margin-top: 30px;
     width: 60vw;
     height: 70vh;
-    border-top: 3px solid #ec008c;
 }
 
 /*--------------------------------PHOTOS*/
@@ -143,32 +226,38 @@ iframe {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    max-width: 90vw;
-    margin-left: 300px
+    align-items: space-between;
+    align-items: space-between;
 }
 
 .gallery__image {
-    width: 20vw; 
+    width: 18vw; 
     height: auto;
-    margin: 5px;
+    margin: 10px;
     border-top: 3px solid #ec008c;
 }
 
 /*--------------------------------CONTACT*/
 
 .contact-section {
-    margin-left: 300px;
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: rgba(204, 200, 255, 0.8);
+}
+
+.contact-section__desc {
+    display: flex;
+    flex-flow: column wrap;
 }
 
 .contact-section__image {
-    width: 40vw;
+    width: 30vw;
+    margin: 0 80px 30px 0;
 }
 
-address {
-    float: right;
-    margin-right: 10vw;
-    margin-top: 200px;
-    font-style: normal;
+.form {
+    text-align: left;
 }
 
 .form__field {
@@ -176,7 +265,17 @@ address {
 }
 
 .form__input {
+    min-width: 250px;
     border: 0px;
     border-radius: 5px;
     padding: 5px 15px;
+    margin: 5px 0;
+    background-color: rgba(204, 200, 255, 0.1);
+    color: #dbd8fb;
+}
+
+address {
+    font-style: normal;
+    text-align: left;
+    padding-top: 20vh;
 }

@@ -62,7 +62,7 @@
 
     
     <main class="page-content">
-        <section id="home" class="content-section">
+        <section id="home" class="content-section home-section">
             <h2 class="content-section__header non-visible">Home</h2>
             <ul class="band-members">
                 <li class="band-members__item">
@@ -90,11 +90,11 @@
 
         <section id="about" class="content-section about-section">
             <h2 class="content-section__header">About</h2>
-            <img class="about-section__photo" src="./images/band01.jpg" alt="Photo of the entire band">
-            <div class="about-section__desc">
+            <img class="about-section__photo border1" src="./images/band01.jpg" alt="Photo of the entire band">
+            <div class="about-section__desc border2">
                 <h3 class="about-section__desc-header">Straight from Lublin</h3>
                 <p class="about-section__desc-desc">6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock. Band members aim to convey emotions, reflexion but also hope.</p>
-                <p class="about-section__desc-desc">They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass. As for now they released their debut EP - TRINITY and they started working on their first full length album.</p>        
+                <p class="about-section__desc-desc">They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass. As for now they released their debut EP - TRINITY and they started working on their first full length album.</p> 
             </div>
         </section>
     
@@ -108,7 +108,7 @@
                                 <p class="concerts__date">20.12.2018</p>
                                 <p class="concerts__location">Lublin, klub XXX</p>
                             </span>
-                            <button class="button">Buy a ticket</button>
+                            <button class="button">Buy  ticket</button>
                         </header>
                     </article>
                     <article class="concerts__item">
@@ -116,9 +116,9 @@
                         <header class="concerts__info">
                             <span>
                                 <p class="concerts__date">20.12.2018</p>
-                                <p class="concerts__location">Lublin, klub XXX</p>
+                                <p class="concerts__location">Warszawa, klub YYY</p>
                             </span>
-                            <button class="button">Buy a ticket</button>
+                            <button class="button">Buy ticket</button>
                         </header>
                     </article>
                     <article class="concerts__item">
@@ -128,7 +128,7 @@
                                 <p class="concerts__date">20.12.2018</p>
                                 <p class="concerts__location">Lublin, klub XXX</p>
                             </span>
-                            <button class="button">Buy a ticket</button>
+                            <button class="button">Buy ticket</button>
                         </header>
                     </article>
                     <article class="concerts__item">
@@ -138,7 +138,7 @@
                                 <p class="concerts__date">20.12.2018</p>
                                 <p class="concerts__location">Lublin, klub XXX</p>
                             </span>
-                            <button class="button">Buy a ticket</button>
+                            <button class="button">Buy ticket</button>
                         </header>
                     </article>
                 </div>
@@ -147,7 +147,7 @@
         
         <section id="video"  class="content-section">
             <h2 class="content-section__header">Video</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="border1" width="560" height="315" src="https://www.youtube.com/embed/AstRXh-vKNI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </section>
     
         <section id="photos" class="content-section">
@@ -183,27 +183,36 @@
             </ul>
         </section>
     
-        <section id="contact" class="content-section contact-section">
+        <section id="contact" class="content-section">
             <h2 class="content-section__header">Contact</h2>
-            <img class="contact-section__image" src="images/band12.jpg" alt="Photo of the band">
-            <address>
-                tel: 00 48 999 22 11<br/>
-                e-mail:6bmband@mail.mail
-            </address>
+            
+            <div class="contact-section">
+                <div class="contact-section__desc">
+                    <img class="contact-section__image" src="images/band12.jpg" alt="Photo of the band">
 
-            <form class="form">
-                <div class="form__field">
-                    <label class="form__label" for="email">E-mail</label><br/>
-                    <input class="form__input" type="email" name="email" id="email" required />
+                    <form class="form">
+                        <div class="form__field">
+                            <label class="form__label" for="email">E-mail</label><br/>
+                            <input class="form__input" type="email" name="email" id="email" required />
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label" for="topic">Topic</label><br/>
+                            <input class="form__input" type="text" name="topic" id="topic" required />
+                        </div>
+                        <div class="form__field">
+                            <button class="button" type="submit">Contact us!</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form__field">
-                    <label class="form__label" for="topic">Topic</label><br/>
-                    <input class="form__input" type="text" name="topic" id="topic" required />
-                </div>
-                <div class="form__field">
-                    <button class="button" type="submit">Contact us!</button>
-                </div>
-            </form>
+                <address>
+                    tel: 00 48 999 22 11<br/>
+                    e-mail: 6bmband@mail.mail
+                </address>            
+            
+            </div>
+
+
+
         </section>
     </main>    
 </body>
