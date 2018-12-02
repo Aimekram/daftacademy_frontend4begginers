@@ -114,10 +114,11 @@ button {
     margin: 5px;
 }
 
+/* display none since I don't have the JS code for it yet  */
 .burger-nav {
     color: #ec008c;
     font-size: 1.7rem;
-    display: block;
+    display: none;
 }
 
 /*--------------------------------HOME*/
