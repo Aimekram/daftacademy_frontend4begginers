@@ -6,14 +6,20 @@
     <title>6BM</title>
     
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
     
 </head>
 
 <body>
     <header class="page-header">
-        <h1>
+        <h1 class="page-header__logo">
             <img src="images/logo.png">
         </h1>
+        <div id="burger" class="burger-nav">
+            <i class="fas fa-bars"></i>
+        </div>
         <nav class="navigation">
             <ul class="navigation__items">
                 <li class="navigation__item">
@@ -90,12 +96,15 @@
 
         <section id="about" class="content-section about-section">
             <h2 class="content-section__header">About</h2>
-            <img class="about-section__photo border1" src="./images/band01.jpg" alt="Photo of the entire band">
-            <div class="about-section__desc border2">
-                <h3 class="about-section__desc-header">Straight from Lublin</h3>
-                <p class="about-section__desc-desc">6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock. Band members aim to convey emotions, reflexion but also hope.</p>
-                <p class="about-section__desc-desc">They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass. As for now they released their debut EP - TRINITY and they started working on their first full length album.</p> 
+            <div class="about-section__content">
+                <img class="about-section__photo border1" src="./images/band01.jpg" alt="Photo of the entire band">
+                <div class="about-section__desc border2">
+                    <h3 class="about-section__desc-header">Straight from Lublin</h3>
+                    <p class="about-section__desc-desc">6BM is a young band which has it's origins in the city of Lublin, playing music described as electrorock. Band members aim to convey emotions, reflexion but also hope.</p>
+                    <p class="about-section__desc-desc">They are inspired by various genres, like: alternative rock, nu-metal, synthwave or even drum'n'bass. As for now they released their debut EP - TRINITY and they started working on their first full length album.</p> 
+                </div>
             </div>
+
         </section>
     
         <section id="concerts" class="content-section">
@@ -214,6 +223,15 @@
 
 
         </section>
-    </main>    
+    </main>
+    
+<!--
+    <script>
+        const burger = document.getElementById("burger");
+        burger.addEventListener("click", function () {
+            burger.classList.toggle("burger-nav");
+        });
+    </script>
+-->
 </body>
 </html>
