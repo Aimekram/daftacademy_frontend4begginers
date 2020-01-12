@@ -1,2 +1,5 @@
 # daftacademy_frontend4begginers
-Project for Front-end Course conducted by DaftCode
+It's a landing page for a music band coded during the DaftAcademy course. 
+HTML+CSS only
+
+live demo: https://aimekram.github.io/daftacademy_frontend4begginers/
